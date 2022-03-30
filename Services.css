@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ddd;
+    font-family: poppins, sans-serif;
+    color: #fff;
+    background-image: url("image7.jpg");
+}
+.services{
+    width: 1300px;
+    padding: 80px 60px;
+    margin: auto;
+}
+.services h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    position: relative;
+    font-weight: 700;
+    color:black;
+}
+.services h1:after{
+    content:'' ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color:black;
+}
+ .cards{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .card{
+    width: calc(34% 22px);
+    background: #525050;
+    color: rgb(250, 250, 250); 
+    padding:40px 12px;
+    margin: 0 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 3s;
+ }
+ .sbox i{
+     font-size: 36px;
+     background: rgb(131, 133, 241);
+     border: 1px solid rgba(0,0,0,0.5);
+     border-radius: 50%;
+     padding: 15px;
+ }
+ .sbox h3{
+     font-size: 24px;
+ }
+ .sbox p{
+     margin: 20px 0;
+     text-align: justify;
+ }
+ .sbox a{
+     text-decoration: none;
+     color: #f5edef;
+     font-size: 18px;
+     font-weight: 500;
+     background: #201b1b;
+     padding: 10px 15px;
+     border-radius: 18px;
+     transform: 0.5s;
+     margin: 20px 0;
+ }
+ .sbox a:hover{
+     background: transparent;
+     border: 1px solid #333;
+     transform: scale(1.2);
+     background: rgb(0, 184, 148);
+ }
+ .card:hover .sbox i{
+     background: rgb(0, 184, 148);
+     color: pink;
+     border-color:rgb(0, 184, 148) ;
+ }
